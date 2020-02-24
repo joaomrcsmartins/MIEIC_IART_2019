@@ -53,3 +53,12 @@ dfs(S,Visited,[S|R]) :-
     \+ member(S2,Visited),
     dfs(S2,[S2|Visited],R).
 
+bfs([S|_],_,[S]) :-
+    goal_state(S).
+
+bfs([S|R],Visited,[S|R1]) :-
+    findall(O,(operator(S,O),\+member(O,Visited)), Children),
+    append(R,Children,R2),
+    bfs(R2,[S|Visited],R1).
+    
+    
