@@ -3,11 +3,17 @@
 ## 1.2 B
 
 **CL** - nº of cannibals in left margin
+
 **CR** - nº of cannibals in right margin
+
 **ML** - nº of missionaries in left margin
+
 **MR** - nº of missinaries in right margin
+
 **BL** - boat on left margin (false(0)/true(1))
+
 **BR** - boat on right margin (...)
+
 **[[CL,ML,BL],[CR,MR,BR]]**
 
 **Initial state**: [[3,3,1],[0,0,0]]
